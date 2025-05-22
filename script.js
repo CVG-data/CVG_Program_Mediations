@@ -27,6 +27,7 @@ fetch('data/filtered_zips_with_mediations.geojson')
       }
     }).addTo(map);
 
+    console.log("First feature properties:", data.features[0].properties);  // 👈 Add this
     setupDropdowns(data.features);
   });
 
