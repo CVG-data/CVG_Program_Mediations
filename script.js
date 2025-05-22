@@ -43,9 +43,9 @@ function getColor(count) {
 
 function setupDropdowns(features) {
   const stateSelect = document.getElementById('stateSelect');
-  const programSelect = document.getElementById('programSelect');
+  const citySelect = document.getElementById('programSelect');
 
-  // Populate states
+  // Populate unique states
   const states = [...new Set(features.map(f => f.properties.state))].sort();
   states.forEach(state => {
     const opt = document.createElement('option');
@@ -53,38 +53,35 @@ function setupDropdowns(features) {
     stateSelect.add(opt);
   });
 
-  // When state changes, update program list
+  // When state changes, populate cities in that state
   stateSelect.addEventListener('change', () => {
-    programSelect.innerHTML = '<option value="">Select Program</option>';
+    citySelect.innerHTML = '<option value="">Select City</option>';
     const selectedState = stateSelect.value;
 
-    const programSites = [...new Set(features
+    const cities = [...new Set(features
       .filter(f => f.properties.state === selectedState)
-      .map(f => f.properties.name_of_program_site))].sort();
+      .map(f => f.properties.city))].sort();
 
-    programSites.forEach(site => {
+    cities.forEach(city => {
       const opt = document.createElement('option');
-      opt.value = opt.text = site;
-      programSelect.add(opt);
+      opt.value = opt.text = city;
+      citySelect.add(opt);
     });
   });
 
-  // When program is selected, zoom to it
-  programSelect.addEventListener('change', () => {
+  // When city is selected, zoom to all ZIP shapes in that city
+  citySelect.addEventListener('change', () => {
     const selectedState = stateSelect.value;
-    const selectedProgram = programSelect.value;
+    const selectedCity = citySelect.value;
 
     const matches = features.filter(f =>
       f.properties.state === selectedState &&
-      f.properties.name_of_program_site === selectedProgram
+      f.properties.city === selectedCity
     );
 
     if (matches.length) {
       const group = L.geoJSON(matches);
-      map.fitBounds(group.getBounds().pad(0.2));
+      map.fitBounds(group.getBounds().pad(0.25));
     }
   });
 }
-
-
-
