@@ -30,6 +30,7 @@ fetch('data/filtered_zips_with_mediations.geojson')
     setupDropdowns(data.features);
   });
 
+  
 function getColor(count) {
   return count > 350 ? '#4a1486' :
          count > 300 ? '#6a51a3' :
