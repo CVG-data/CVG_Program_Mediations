@@ -6,12 +6,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let zipLayer;
 
-fetch('data/filtered_zips_with_mediations.geojson')
+// Mediation Counts and Program site added to mouseover tooltip polygon/shape
+fetch('data/filtered_zips_with_mediations.geojson') 
   .then(res => res.json())
   .then(data => {
     zipLayer = L.geoJSON(data, {
       style: feature => ({
-        fillColor: getColor(feature.properties.mediation_count),
+        fillColor: getColor(feature.properties.mediation_count), 
         weight: 1,
         color: "#444",
         fillOpacity: 0.7
@@ -19,7 +20,7 @@ fetch('data/filtered_zips_with_mediations.geojson')
       onEachFeature: (feature, layer) => {
         const props = feature.properties;
         layer.bindTooltip(
-          `<strong>${props.name_of_program_site}</strong><br>
+          `<strong>${props.name_of_program_site}</strong><br> 
            ZIP: ${props.GEOID20}<br>
            Mediations: ${props.mediation_count || 0}`,
           { sticky: true }
@@ -34,15 +35,16 @@ fetch('data/filtered_zips_with_mediations.geojson')
   
 function getColor(count) {
   return count > 350 ? '#4a1486' :
-         count > 300 ? '#6a51a3' :
-         count > 250  ? '#807dba' :
-         count > 200  ? '#9e9ac8' :
-         count > 100  ? '#bcbddc' :
-         count > 50   ? '#dadaeb' :
-         count > 10   ? '#f2f0f7' :
+         count > 250 ? '#6a51a3' :
+         count > 150  ? '#807dba' :
+         count > 75  ? '#9e9ac8' :
+         count > 50  ? '#bcbddc' :
+         count > 25   ? '#dadaeb' :
+         count > 5   ? '#f2f0f7' :
                         '#fefefe';
 }
 
+// add Dropdown filter for map
 function setupDropdowns(features) {
   const stateSelect = document.getElementById('stateSelect');
   const citySelect = document.getElementById('programSelect');
