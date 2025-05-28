@@ -1,0 +1,1307 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1211.0901                               -->
+<workbook original-version='18.1' source-build='2024.3.2 (20243.24.1211.0901)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <CascadingFilters />
+    <CascadingFiltersHamburgerUI />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <SpecificWebTargetsForActions />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='filtered_zips_with_mediations' inline='true' name='federated.19q5w6709rzwbe18dl8ox0qcfn0z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='filtered_zips_with_mediations' name='ogrdirect.03sqv4y03ofuax1da42081aqh1tx'>
+            <connection class='ogrdirect' directory='C:/Users/brand/OneDrive/Documents/GitHub/CVG_Program_Mediations/data' filename='filtered_zips_with_mediations.geojson' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='ogrdirect.03sqv4y03ofuax1da42081aqh1tx' name='filtered_zips_with_mediations.geojson' table='[filtered_zips_with_mediations.geojson]' type='table'>
+          <columns>
+            <column datatype='string' name='ZCTA5CE20' ordinal='0' />
+            <column datatype='string' name='GEOID20' ordinal='1' />
+            <column datatype='string' name='GEOIDFQ20' ordinal='2' />
+            <column datatype='string' name='CLASSFP20' ordinal='3' />
+            <column datatype='string' name='MTFCC20' ordinal='4' />
+            <column datatype='string' name='FUNCSTAT20' ordinal='5' />
+            <column datatype='integer' name='ALAND20' ordinal='6' />
+            <column datatype='integer' name='AWATER20' ordinal='7' />
+            <column datatype='string' name='INTPTLAT20' ordinal='8' />
+            <column datatype='string' name='INTPTLON20' ordinal='9' />
+            <column datatype='integer' name='index_right' ordinal='10' />
+            <column datatype='string' name='mediation_outcome' ordinal='11' />
+            <column datatype='string' name='name_of_program_site' ordinal='12' />
+            <column datatype='string' name='date_of_injury' ordinal='13' />
+            <column datatype='string' name='when_did_you_mediate' ordinal='14' />
+            <column datatype='string' name='date_of_follow-up' ordinal='15' />
+            <column datatype='date' name='when_did_the_conflict_happen' ordinal='16' />
+            <column datatype='datetime' name='last_modified_date' ordinal='17' />
+            <column datatype='string' name='caseid' ordinal='18' />
+            <column datatype='string' name='name' ordinal='19' />
+            <column datatype='string' name='FollowUp_Username' ordinal='20' />
+            <column datatype='string' name='Username' ordinal='21' />
+            <column datatype='string' name='owner_id' ordinal='22' />
+            <column datatype='string' name='program_site_code' ordinal='23' />
+            <column datatype='string' name='pin_mediation' ordinal='24' />
+            <column datatype='integer' name='number' ordinal='25' />
+            <column datatype='string' name='describe_the_dispute_1-2_sentences' ordinal='27' />
+            <column datatype='string' name='followup_outcome' ordinal='28' />
+            <column datatype='string' name='likelihood_reignite' ordinal='29' />
+            <column datatype='string' name='reason_for_incident_check_all_that_apply' ordinal='30' />
+            <column datatype='string' name='what_were_the_cross_streets_of_the_conflict' ordinal='31' />
+            <column datatype='integer' name='closed' ordinal='32' />
+            <column datatype='string' name='closed_by_username' ordinal='33' />
+            <column datatype='string' name='closed_date' ordinal='34' />
+            <column datatype='string' name='last_modified_by_user_username' ordinal='35' />
+            <column datatype='string' name='opened_by_username' ordinal='36' />
+            <column datatype='datetime' name='opened_date' ordinal='37' />
+            <column datatype='string' name='owner_name' ordinal='38' />
+            <column datatype='string' name='case_link' ordinal='39' />
+            <column datatype='string' name='city' ordinal='40' />
+            <column datatype='string' name='state' ordinal='41' />
+            <column datatype='string' name='full_address' ordinal='42' />
+            <column datatype='real' name='lat' ordinal='43' />
+            <column datatype='real' name='lon' ordinal='44' />
+            <column datatype='integer' name='mediation_count' ordinal='45' />
+            <column datatype='spatial' name='Geometry' ordinal='46' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ZCTA5CE20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZCTA5CE20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>ZCTA5CE20</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOID20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEOID20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>GEOID20</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOIDFQ20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEOIDFQ20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>GEOIDFQ20</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLASSFP20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLASSFP20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>CLASSFP20</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MTFCC20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MTFCC20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>MTFCC20</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUNCSTAT20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUNCSTAT20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>FUNCSTAT20</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALAND20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ALAND20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>ALAND20</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AWATER20</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AWATER20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>AWATER20</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INTPTLAT20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[INTPTLAT20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>INTPTLAT20</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INTPTLON20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[INTPTLON20]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>INTPTLON20</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index_right</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index_right]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>index_right</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mediation_outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mediation_outcome]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>mediation_outcome</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name_of_program_site</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name_of_program_site]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>name_of_program_site</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_injury</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[date_of_injury]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>date_of_injury</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>when_did_you_mediate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[when_did_you_mediate]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>when_did_you_mediate</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_follow-up</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[date_of_follow-up]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>date_of_follow-up</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>when_did_the_conflict_happen</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[when_did_the_conflict_happen]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>when_did_the_conflict_happen</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_modified_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[last_modified_date]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>last_modified_date</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>caseid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[caseid]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>caseid</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FollowUp_Username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FollowUp_Username]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>FollowUp_Username</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Username]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>Username</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>owner_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[owner_id]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>owner_id</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>program_site_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[program_site_code]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>program_site_code</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pin_mediation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pin_mediation]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>pin_mediation</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>number</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>describe_the_dispute_1-2_sentences</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[describe_the_dispute_1-2_sentences]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>describe_the_dispute_1-2_sentences</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>followup_outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[followup_outcome]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>followup_outcome</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likelihood_reignite</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[likelihood_reignite]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>likelihood_reignite</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason_for_incident_check_all_that_apply</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reason_for_incident_check_all_that_apply]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>reason_for_incident_check_all_that_apply</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>what_were_the_cross_streets_of_the_conflict</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[what_were_the_cross_streets_of_the_conflict]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>what_were_the_cross_streets_of_the_conflict</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>closed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[closed]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>closed</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>closed_by_username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[closed_by_username]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>closed_by_username</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>closed_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[closed_date]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>closed_date</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_modified_by_user_username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_modified_by_user_username]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>last_modified_by_user_username</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opened_by_username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[opened_by_username]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>opened_by_username</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opened_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[opened_date]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>opened_date</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>owner_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[owner_name]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>owner_name</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[case_link]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>case_link</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>full_address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[full_address]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>full_address</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lon]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>lon</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mediation_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mediation_count]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>mediation_count</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[filtered_zips_with_mediations.geojson]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Aland20' datatype='integer' name='[ALAND20]' role='measure' type='quantitative' />
+      <column caption='Awater20' datatype='integer' name='[AWATER20]' role='measure' type='quantitative' />
+      <column caption='Classfp20' datatype='string' name='[CLASSFP20]' role='dimension' type='nominal' />
+      <column caption='Map URL' datatype='string' name='[Calculation_-8457197135704653824]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;https://cvg-data.github.io/CVG_Program_Mediations/?state=&quot; + [state] + &quot;&amp;city=&quot; + [city]' />
+      </column>
+      <column caption='Refresh Map Button' datatype='string' name='[Calculation_978407033850048512]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;🔄 Refresh Map&quot;' />
+      </column>
+      <column caption='Funcstat20' datatype='string' name='[FUNCSTAT20]' role='dimension' type='nominal' />
+      <column caption='FollowUp Username' datatype='string' name='[FollowUp_Username]' role='dimension' type='nominal' />
+      <column caption='Geoid20' datatype='string' name='[GEOID20]' role='dimension' type='nominal' />
+      <column caption='Geoidfq20' datatype='string' name='[GEOIDFQ20]' role='dimension' type='nominal' />
+      <column caption='Intptlat20' datatype='string' name='[INTPTLAT20]' role='dimension' type='nominal' />
+      <column caption='Intptlon20' datatype='string' name='[INTPTLON20]' role='dimension' type='nominal' />
+      <column caption='Mtfcc20' datatype='string' name='[MTFCC20]' role='dimension' type='nominal' />
+      <column caption='Zcta5Ce20' datatype='string' name='[ZCTA5CE20]' role='dimension' type='nominal' />
+      <column caption='filtered_zips_with_mediations.geojson' datatype='table' name='[__tableau_internal_object_id__].[filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C]' role='measure' type='quantitative' />
+      <column caption='Case Link' datatype='string' name='[case_link]' role='dimension' type='nominal' />
+      <column caption='Caseid' datatype='string' name='[caseid]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Closed' datatype='integer' name='[closed]' role='measure' type='quantitative' />
+      <column caption='Closed By Username' datatype='string' name='[closed_by_username]' role='dimension' type='nominal' />
+      <column caption='Closed Date' datatype='string' name='[closed_date]' role='dimension' type='nominal' />
+      <column caption='Date Of Follow-Up' datatype='string' name='[date_of_follow-up]' role='dimension' type='nominal' />
+      <column caption='Date Of Injury' datatype='string' name='[date_of_injury]' role='dimension' type='nominal' />
+      <column caption='Describe The Dispute 1-2 Sentences' datatype='string' name='[describe_the_dispute_1-2_sentences]' role='dimension' type='nominal' />
+      <column caption='Followup Outcome' datatype='string' name='[followup_outcome]' role='dimension' type='nominal' />
+      <column caption='Full Address' datatype='string' name='[full_address]' role='dimension' type='nominal' />
+      <column caption='Index Right' datatype='integer' name='[index_right]' role='measure' type='quantitative' />
+      <column caption='Last Modified By User Username' datatype='string' name='[last_modified_by_user_username]' role='dimension' type='nominal' />
+      <column caption='Last Modified Date' datatype='datetime' name='[last_modified_date]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Likelihood Reignite' datatype='string' name='[likelihood_reignite]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Lon' datatype='real' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Mediation Count' datatype='integer' name='[mediation_count]' role='measure' type='quantitative' />
+      <column caption='Mediation Outcome' datatype='string' name='[mediation_outcome]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Site' datatype='string' name='[name_of_program_site]' role='dimension' type='nominal' />
+      <column caption='Number' datatype='integer' name='[number]' role='dimension' type='ordinal' />
+      <column caption='Opened By Username' datatype='string' name='[opened_by_username]' role='dimension' type='nominal' />
+      <column caption='Opened Date' datatype='datetime' name='[opened_date]' role='dimension' type='ordinal' />
+      <column caption='Owner Id' datatype='string' name='[owner_id]' role='dimension' type='nominal' />
+      <column caption='Owner Name' datatype='string' name='[owner_name]' role='dimension' type='nominal' />
+      <column caption='Pin Mediation' datatype='string' name='[pin_mediation]' role='dimension' type='nominal' />
+      <column caption='Program Site Code' datatype='string' name='[program_site_code]' role='dimension' type='nominal' />
+      <column caption='Mediation Type' datatype='string' name='[reason_for_incident_check_all_that_apply]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='What Were The Cross Streets Of The Conflict' datatype='string' name='[what_were_the_cross_streets_of_the_conflict]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[when_did_the_conflict_happen]' role='dimension' type='ordinal' />
+      <column caption='When Did You Mediate' datatype='string' name='[when_did_you_mediate]' role='dimension' type='nominal' />
+      <column-instance column='[reason_for_incident_check_all_that_apply]' derivation='None' name='[none:reason_for_incident_check_all_that_apply:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Map URL)' hidden='true' name='[Action (Map URL)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_-8457197135704653824]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:reason_for_incident_check_all_that_apply:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;bystander&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;retaliation&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;invididual_confict&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;group_conflict&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;robbery_mugging&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;gender-based_violence&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='filtered_zips_with_mediations.geojson' id='filtered_zips_with_mediations.geojson_8A5D9068E1B6458D81C031BE3814953C'>
+            <properties context=''>
+              <relation connection='ogrdirect.03sqv4y03ofuax1da42081aqh1tx' name='filtered_zips_with_mediations.geojson' table='[filtered_zips_with_mediations.geojson]' type='table'>
+                <columns>
+                  <column datatype='string' name='ZCTA5CE20' ordinal='0' />
+                  <column datatype='string' name='GEOID20' ordinal='1' />
+                  <column datatype='string' name='GEOIDFQ20' ordinal='2' />
+                  <column datatype='string' name='CLASSFP20' ordinal='3' />
+                  <column datatype='string' name='MTFCC20' ordinal='4' />
+                  <column datatype='string' name='FUNCSTAT20' ordinal='5' />
+                  <column datatype='integer' name='ALAND20' ordinal='6' />
+                  <column datatype='integer' name='AWATER20' ordinal='7' />
+                  <column datatype='string' name='INTPTLAT20' ordinal='8' />
+                  <column datatype='string' name='INTPTLON20' ordinal='9' />
+                  <column datatype='integer' name='index_right' ordinal='10' />
+                  <column datatype='string' name='mediation_outcome' ordinal='11' />
+                  <column datatype='string' name='name_of_program_site' ordinal='12' />
+                  <column datatype='string' name='date_of_injury' ordinal='13' />
+                  <column datatype='string' name='when_did_you_mediate' ordinal='14' />
+                  <column datatype='string' name='date_of_follow-up' ordinal='15' />
+                  <column datatype='date' name='when_did_the_conflict_happen' ordinal='16' />
+                  <column datatype='datetime' name='last_modified_date' ordinal='17' />
+                  <column datatype='string' name='caseid' ordinal='18' />
+                  <column datatype='string' name='name' ordinal='19' />
+                  <column datatype='string' name='FollowUp_Username' ordinal='20' />
+                  <column datatype='string' name='Username' ordinal='21' />
+                  <column datatype='string' name='owner_id' ordinal='22' />
+                  <column datatype='string' name='program_site_code' ordinal='23' />
+                  <column datatype='string' name='pin_mediation' ordinal='24' />
+                  <column datatype='integer' name='number' ordinal='25' />
+                  <column datatype='string' name='describe_the_dispute_1-2_sentences' ordinal='27' />
+                  <column datatype='string' name='followup_outcome' ordinal='28' />
+                  <column datatype='string' name='likelihood_reignite' ordinal='29' />
+                  <column datatype='string' name='reason_for_incident_check_all_that_apply' ordinal='30' />
+                  <column datatype='string' name='what_were_the_cross_streets_of_the_conflict' ordinal='31' />
+                  <column datatype='integer' name='closed' ordinal='32' />
+                  <column datatype='string' name='closed_by_username' ordinal='33' />
+                  <column datatype='string' name='closed_date' ordinal='34' />
+                  <column datatype='string' name='last_modified_by_user_username' ordinal='35' />
+                  <column datatype='string' name='opened_by_username' ordinal='36' />
+                  <column datatype='datetime' name='opened_date' ordinal='37' />
+                  <column datatype='string' name='owner_name' ordinal='38' />
+                  <column datatype='string' name='case_link' ordinal='39' />
+                  <column datatype='string' name='city' ordinal='40' />
+                  <column datatype='string' name='state' ordinal='41' />
+                  <column datatype='string' name='full_address' ordinal='42' />
+                  <column datatype='real' name='lat' ordinal='43' />
+                  <column datatype='real' name='lon' ordinal='44' />
+                  <column datatype='integer' name='mediation_count' ordinal='45' />
+                  <column datatype='spatial' name='Geometry' ordinal='46' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.19q5w6709rzwbe18dl8ox0qcfn0z'>
+      <datasources>
+        <datasource caption='filtered_zips_with_mediations' name='federated.19q5w6709rzwbe18dl8ox0qcfn0z' />
+      </datasources>
+      <datasource-dependencies datasource='federated.19q5w6709rzwbe18dl8ox0qcfn0z'>
+        <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+        <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+        <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+        <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]'>
+        <groupfilter function='member' level='[none:city:nk]' member='&quot;Macon&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]'>
+        <groupfilter function='member' level='[none:state:nk]' member='&quot;Georgia&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Hyperlink1' name='[Action2_DC943F9A94C247B4B79A91694AA1E66E]'>
+      <activation type='on-hover' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 3' />
+      <link caption='' expression='&lt;[Calculation_-8457197135704653824]&gt;'>
+        <url-action-type>specific-zone</url-action-type>
+        <url-action-target>12</url-action-target>
+      </link>
+    </action>
+    <datasources>
+      <datasource caption='filtered_zips_with_mediations' name='federated.19q5w6709rzwbe18dl8ox0qcfn0z' />
+    </datasources>
+    <datasource-dependencies datasource='federated.19q5w6709rzwbe18dl8ox0qcfn0z'>
+      <column caption='Map URL' datatype='string' name='[Calculation_-8457197135704653824]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;https://cvg-data.github.io/CVG_Program_Mediations/?state=&quot; + [state] + &quot;&amp;city=&quot; + [city]' />
+      </column>
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Map URL'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>&lt;</run>
+            <run fontsize='12'>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]</run>
+            <run fontsize='12'>&gt;, &lt;</run>
+            <run fontsize='12'>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]</run>
+            <run fontsize='12'>&gt; Chloropleth Map Link</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='filtered_zips_with_mediations' name='federated.19q5w6709rzwbe18dl8ox0qcfn0z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19q5w6709rzwbe18dl8ox0qcfn0z'>
+            <column caption='Map URL' datatype='string' name='[Calculation_-8457197135704653824]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;https://cvg-data.github.io/CVG_Program_Mediations/?state=&quot; + [state] + &quot;&amp;city=&quot; + [city]' />
+            </column>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[Calculation_-8457197135704653824]' derivation='None' name='[none:Calculation_-8457197135704653824:nk]' pivot='key' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_-8457197135704653824:nk]'>
+            <groupfilter function='level-members' level='[none:Calculation_-8457197135704653824:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]</column>
+            <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]</column>
+            <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_-8457197135704653824:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='968' />
+            <format attr='height' value='101' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_-8457197135704653824:nk]' value='760' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_-8457197135704653824:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_-8457197135704653824:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8447BE9F-69F9-4158-9403-7C03984A5205}' />
+    </worksheet>
+    <worksheet name='Mediation Types - Bar Chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Mediation Work</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='filtered_zips_with_mediations' name='federated.19q5w6709rzwbe18dl8ox0qcfn0z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19q5w6709rzwbe18dl8ox0qcfn0z'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Mediation Count' datatype='integer' name='[mediation_count]' role='measure' type='quantitative' />
+            <column caption='Site' datatype='string' name='[name_of_program_site]' role='dimension' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name_of_program_site]' derivation='None' name='[none:name_of_program_site:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reason_for_incident_check_all_that_apply]' derivation='None' name='[none:reason_for_incident_check_all_that_apply:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Mediation Type' datatype='string' name='[reason_for_incident_check_all_that_apply]' role='dimension' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[mediation_count]' derivation='Sum' name='[sum:mediation_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[when_did_the_conflict_happen]' role='dimension' type='ordinal' />
+            <column-instance column='[when_did_the_conflict_happen]' derivation='Year' name='[yr:when_did_the_conflict_happen:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]</column>
+            <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[sum:mediation_count:qk]' value='148' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:name_of_program_site:nk]' value='92' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:reason_for_incident_check_all_that_apply:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[sum:mediation_count:qk]</rows>
+        <cols>([federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:name_of_program_site:nk] / [federated.19q5w6709rzwbe18dl8ox0qcfn0z].[yr:when_did_the_conflict_happen:ok])</cols>
+      </table>
+      <simple-id uuid='{A9D6512D-99F5-45C8-BA72-11400B3827C7}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='filtered_zips_with_mediations' name='federated.19q5w6709rzwbe18dl8ox0qcfn0z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19q5w6709rzwbe18dl8ox0qcfn0z'>
+            <column caption='Map URL' datatype='string' name='[Calculation_-8457197135704653824]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;https://cvg-data.github.io/CVG_Program_Mediations/?state=&quot; + [state] + &quot;&amp;city=&quot; + [city]' />
+            </column>
+            <column caption='Refresh Map Button' datatype='string' name='[Calculation_978407033850048512]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;🔄 Refresh Map&quot;' />
+            </column>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[Calculation_-8457197135704653824]' derivation='None' name='[none:Calculation_-8457197135704653824:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_978407033850048512]' derivation='None' name='[none:Calculation_978407033850048512:nk]' pivot='key' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]</column>
+            <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='12' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_978407033850048512:nk]' value='256' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='vertical-align' scope='rows' value='center' />
+            <format attr='font-size' scope='cols' value='12' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='12' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_-8457197135704653824:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_978407033850048512:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{97B18C85-C5A1-4216-A7C4-EDBC6B4D3755}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='filtered_zips_with_mediations' name='federated.19q5w6709rzwbe18dl8ox0qcfn0z' />
+      </datasources>
+      <datasource-dependencies datasource='federated.19q5w6709rzwbe18dl8ox0qcfn0z'>
+        <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+        <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+        <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+        <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88625' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='10375'>
+            <zone h='88625' id='5' type-v2='layout-basic' w='98400' x='800' y='10375'>
+              <zone h='34125' id='3' name='Mediation Types - Bar Chart' w='78085' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='' h='49000' id='12' param='https://cvg-data.github.io/CVG_Program_Mediations/?state=Georgia&amp;city=Macon' type-v2='web' w='98400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='246' h='34125' id='8' is-fixed='true' name='Mediation Types - Bar Chart' pane-specification-id='0' param='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:reason_for_incident_check_all_that_apply:nk]' type-v2='color' w='20315' x='78885' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5500' id='19' name='Sheet 3' show-title='false' w='98400' x='800' y='44500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9375' id='10' type-v2='layout-flow' w='32500' x='800' y='1000'>
+            <zone h='8750' id='9' mode='dropdown' name='Mediation Types - Bar Chart' param='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]' show-all='false' type-v2='filter' values='cascading' w='32500' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='9375' id='11' mode='dropdown' name='Mediation Types - Bar Chart' param='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]' show-all='false' type-v2='filter' values='cascading' w='65900' x='33300' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='95734' x='2133' y='1000'>
+                <zone h='5666' id='9' mode='dropdown' name='Mediation Types - Bar Chart' param='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]' show-all='false' type-v2='filter' values='cascading' w='95734' x='2133' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5666' id='11' mode='dropdown' name='Mediation Types - Bar Chart' param='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]' show-all='false' type-v2='filter' values='cascading' w='95734' x='2133' y='6666'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='234' h='30250' id='3' is-fixed='true' name='Mediation Types - Bar Chart' w='95734' x='2133' y='12332'>
+                  <layout-cache minheight='299' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='246' h='5666' id='8' name='Mediation Types - Bar Chart' pane-specification-id='0' param='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:reason_for_incident_check_all_that_apply:nk]' type-v2='color' w='95734' x='2133' y='42582'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' forceUpdate='' h='36002' id='18' is-fixed='true' param='https://cvg-data.github.io/CVG_Program_Mediations/?state=Florida&amp;city=Jacksonville' type-v2='web' w='95734' x='2133' y='62998'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1E3E2CE1-E7B8-4411-82B1-B355A1D95E12}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='44'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Mediation Types - Bar Chart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{C6580440-F46D-44C4-B737-EF82A1B46975}' />
+    </window>
+    <window class='worksheet' name='Mediation Types - Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:reason_for_incident_check_all_that_apply:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49675036-A758-4A51-81C7-897B89E7E9E6}' />
+    </window>
+    <window class='worksheet' name='Map URL'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{785FA00A-1E2F-436A-BF41-57C425F283AE}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3CBE1DD7-D331-489D-B60E-A7D6DB784C1F}' />
+    </window>
+  </windows>
+</workbook>
