@@ -833,7 +833,7 @@
         <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       </datasource-dependencies>
       <filter class='categorical' column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]'>
-        <groupfilter function='member' level='[none:city:nk]' member='&quot;Atlanta&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <groupfilter function='member' level='[none:city:nk]' member='&quot;Louisville&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
         <target field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]' />
       </filter>
       <filter class='categorical' column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]'>
@@ -1103,7 +1103,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone forceUpdate='' h='49000' id='12' param='https://cvg-data.github.io/CVG_Program_Mediations/?state=Georgia&amp;city=Atlanta' type-v2='web' w='98400' x='800' y='50000'>
+              <zone forceUpdate='' h='49000' id='12' param='https://cvg-data.github.io/CVG_Program_Mediations/?state=Kentucky&amp;city=Louisville' type-v2='web' w='98400' x='800' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
