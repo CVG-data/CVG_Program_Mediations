@@ -833,18 +833,18 @@
         <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       </datasource-dependencies>
       <filter class='categorical' column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]'>
-        <groupfilter function='member' level='[none:city:nk]' member='&quot;Macon&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <groupfilter function='member' level='[none:city:nk]' member='&quot;Atlanta&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
         <target field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]' />
       </filter>
       <filter class='categorical' column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]'>
-        <groupfilter function='member' level='[none:state:nk]' member='&quot;Georgia&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <groupfilter function='member' level='[none:state:nk]' member='&quot;Florida&quot;' user:ui-domain='cascading' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
         <target field='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]' />
       </filter>
     </shared-view>
   </shared-views>
   <actions>
     <action caption='Hyperlink1' name='[Action2_DC943F9A94C247B4B79A91694AA1E66E]'>
-      <activation type='on-hover' />
+      <activation type='on-select' />
       <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 3' />
       <link caption='' expression='&lt;[Calculation_-8457197135704653824]&gt;'>
         <url-action-type>specific-zone</url-action-type>
@@ -1025,9 +1025,13 @@
             <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
             <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_978407033850048512:nk]'>
+            <groupfilter function='member' level='[none:Calculation_978407033850048512:nk]' member='&quot;🔄 Refresh Map&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
           <slices>
             <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:city:nk]</column>
             <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:state:nk]</column>
+            <column>[federated.19q5w6709rzwbe18dl8ox0qcfn0z].[none:Calculation_978407033850048512:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -1046,8 +1050,9 @@
             <format attr='font-size' scope='cols' value='12' />
           </style-rule>
           <style-rule element='worksheet'>
-            <format attr='font-size' value='12' />
             <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-style' value='normal' />
+            <format attr='font-size' value='12' />
           </style-rule>
         </style>
         <panes>
@@ -1098,7 +1103,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone forceUpdate='' h='49000' id='12' param='https://cvg-data.github.io/CVG_Program_Mediations/?state=Georgia&amp;city=Macon' type-v2='web' w='98400' x='800' y='50000'>
+              <zone forceUpdate='' h='49000' id='12' param='https://cvg-data.github.io/CVG_Program_Mediations/?state=Georgia&amp;city=Atlanta' type-v2='web' w='98400' x='800' y='50000'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -1226,7 +1231,7 @@
           <zoom type='fit-width' />
         </viewpoint>
       </viewpoints>
-      <active id='11' />
+      <active id='9' />
       <simple-id uuid='{C6580440-F46D-44C4-B737-EF82A1B46975}' />
     </window>
     <window class='worksheet' name='Mediation Types - Bar Chart'>
